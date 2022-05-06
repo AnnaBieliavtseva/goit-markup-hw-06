@@ -469,20 +469,24 @@
             placeholder="Введите текст"
             class="user-comment"
           ></textarea>
-          <div class="chech-wrap">
+          <div class="check-wrap">
             <input
               type="checkbox"
               name="policy"
               id="input-check"
-              class="input-check"
+              class="input-check visually-hidden"
               value="policy"
             />
-
             <label for="input-check" class="check-text"
-              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+              ><span class="span-icon"
+                ><svg width="11" height="8" class="check-icon">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >Соглашаюсь с рассылкой и принимаю<a href="" class="policy-link"
+                >Условия договора</a
+              ></label
             >
           </div>
-          <button type="submit" class="modal-btn">Отправить</button>
+          <button type="submit" class="main-btn modal-btn">Отправить</button>
         </form>
       </div>
     </div>
