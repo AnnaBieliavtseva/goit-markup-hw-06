@@ -71,7 +71,7 @@ img {
 
 /*----------------------------------- Header--------------------------------- */
 
-.page-header {
+.header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -79,7 +79,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.main-header {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -93,11 +93,11 @@ img {
   text-decoration: none;
 }
 
-.accent {
+.logo--accent {
   color: var(--accent-color);
 }
 
-.main-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -109,11 +109,11 @@ img {
   margin-left: 93px;
 }
 
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav-link {
+.site-nav__link {
   display: block;
   padding-bottom: 32px;
   padding-top: 32px;
@@ -123,18 +123,18 @@ img {
   transition: color var(--primary-transition);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav-link.current {
+.site-nav__link.current {
   color: var(--accent-color);
   display: block;
   position: relative;
 }
 
-.site-nav-link.current::after {
+.site-nav__link.current::after {
   content: '';
   bottom: 0px;
 
@@ -153,11 +153,11 @@ img {
   margin-left: auto;
 }
 
-.contact-list-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-list-link {
+.contact-list__link {
   color: var(--primary-text-color);
   text-decoration: none;
   display: flex;
@@ -165,20 +165,20 @@ img {
   transition: color var(--primary-transition);
 }
 
-.contact-list-link:hover,
-.contact-list-link:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--accent-color);
 }
 
-.contact-list-icon {
+.contact-list__icon {
   margin-right: 10px;
   display: inline-block;
   fill: currentColor;
   transition: fill var(--primary-transition);
 }
 
-.contact-list-link:hover .contact-list-icon,
-.contact-list-link:focus .contact-list-icon {
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
   fill: var(--accent-color);
 }
 
@@ -199,7 +199,7 @@ img {
   max-width: 1600px;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -212,7 +212,7 @@ img {
   text-transform: uppercase;
 }
 
-.main-btn {
+.main__btn {
   display: inline-block;
   padding: 10px 32px;
   border: transparent;
@@ -232,23 +232,23 @@ img {
   transition: background-color var(--primary-transition);
 }
 
-.main-btn:hover,
-.main-btn:focus {
+.main__btn:hover,
+.main__btn:focus {
   background-color: var(--secondary-accent-color);
 }
 
 /*------------------------ Section Features -----------------------------*/
 
-.feature-list {
+.section-features__list {
   display: flex;
   justify-content: space-between;
 }
 
-.feature-list-item:not(:last-child) {
+.section-features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-list-title {
+.section-features__title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -258,12 +258,12 @@ img {
   text-transform: uppercase;
 }
 
-.feature-list-text {
+.section-features__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.feature-list-thumb {
+.section-features__thumb {
   width: 270px;
   height: 120px;
   background-color: var(--secondary-bg-color);
